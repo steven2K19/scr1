@@ -10,15 +10,10 @@ webpage: https://www.opera-arias.com/arias/
 
 ## Usage
 ```
-# pip install fundamental
-
-from fundamental import fundamental
-
-symlist = ['MSFT','GOOG','FB'] 
-df = fundamental.get_df_list(symlist)        
+use scr(url) function and interate all pages  
 
 ```
+![2](https://user-images.githubusercontent.com/46503526/74562017-dabf7f00-4f37-11ea-852f-b580bda62c93.PNG)
 
-## Limitation
-- slow internet connection would lead scraping error and the program will auto try 3 times. 
+## Enjoy the Arias!
 
