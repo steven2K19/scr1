@@ -16,7 +16,7 @@ def scr(url):
         l.append(r)
     l = [x for x in l if x != []]
     lens=[]
-    for num in range(0,30,1):
+    for num in range(0,len(l),1):
         lens.append(len(l[num]))
     cols=[]
     for num in range(1, max(lens)+1,1):
@@ -29,10 +29,8 @@ def scr(url):
 url = "https://www.opera-arias.com/arias/"
 df = scr(url)
 
-try:
-    for num in range (2,99,1):
-        url2= "https://www.opera-arias.com/arias/&page={0}#x".format(num)
-        df2=scr(url2)
-        df=df.append(df2)
-except IndexError:
-   pass
+
+for num in range (2,99,1):
+    url2= "https://www.opera-arias.com/arias/&page={0}#x".format(num)
+    df2=scr(url2)
+    df=df.append(df2)
