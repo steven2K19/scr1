@@ -23,6 +23,7 @@ def scr(url):
         cols.append('col'+str(num))
     df=pd.DataFrame(l,columns=cols)
     df= df[['col1','col2','col5','col7','col9','col11','col13','col15']]
+    df.columns = ['Ranking','Title','Opera','Composer','Act','Type','Voice','lang']
     return df
   
 
