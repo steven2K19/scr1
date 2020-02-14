@@ -10,7 +10,7 @@ webpage: https://www.opera-arias.com/arias/
 
 ## Usage
 ```
-use scr(url) function and interate all pages  
+use scr(url) function and iterate all pages  
 
 ```
 ![2](https://user-images.githubusercontent.com/46503526/74562017-dabf7f00-4f37-11ea-852f-b580bda62c93.PNG)
