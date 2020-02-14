@@ -29,7 +29,10 @@ def scr(url):
 url = "https://www.opera-arias.com/arias/"
 df = scr(url)
 
-for num in range (2,99,1):
-    url2= "https://www.opera-arias.com/arias/&page={0}#x".format(num)
-    df2=scr(url2)
-    df=df.append(df2)
+try:
+    for num in range (2,99,1):
+        url2= "https://www.opera-arias.com/arias/&page={0}#x".format(num)
+        df2=scr(url2)
+        df=df.append(df2)
+except IndexError:
+   pass
